@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "marnet_backend": {
+      "candid": "src/marnet_backend/marnet_backend.did",
+      "package": "marnet_backend",
+      "type": "rust"
+    },
+    "marnet_frontend": {
+      "dependencies": [
+        "marnet_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/marnet_frontend/src/index.html"
+      },
+      "source": [
+        "src/marnet_frontend/assets",
+        "dist/marnet_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
