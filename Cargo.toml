@@ -2,3 +2,4 @@
 members = [
     "src/marnet_backend",
 ]
+resolver = "2"
